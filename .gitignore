@@ -2,5 +2,8 @@
 *.swp
 coverage/
 node_modules/
+
+src/firestore-config.js
 .firebase
-/src/firestore-config.js
+firestore.rules
+firestore.indexes.json

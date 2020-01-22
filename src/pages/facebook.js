@@ -21,9 +21,9 @@ function loginFacebook() {
           $('#myModal').modal('hide');
         })
         .catch(() => {
-          alert('Falha na autenticação')
+          alert('Falha na autenticação');
         });
     });
-};
+}
 
 export default loginFacebook;

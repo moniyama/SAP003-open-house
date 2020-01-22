@@ -1,4 +1,5 @@
 import funcs from './home.js';
+
 const main = document.querySelector('main');
 
 const favoritesTemplate = (props) => {
@@ -20,7 +21,7 @@ const favoritesTemplate = (props) => {
 };
 
 const getFavorites = () => {
-  const user = firebase.auth().currentUser.uid; 
+  const user = firebase.auth().currentUser.uid;
   document.querySelector('.container-category').innerHTML = '';
   main.innerHTML = '';
   document.querySelectorAll('.arrow').forEach((arrow) => arrow.classList.add('hide'));
@@ -38,7 +39,7 @@ const getFavorites = () => {
               const docEvent = {
                 ...querySnapshot2.data(),
                 id: querySnapshot2.id,
-              }
+              };
               main.innerHTML += favoritesTemplate(docEvent);
             });
         });
@@ -47,7 +48,7 @@ const getFavorites = () => {
 };
 
 window.favorites = {
-  handleClick: (event, callBack) => {  
+  handleClick: (event, callBack) => {
     callBack(event.currentTarget);
   },
 };
