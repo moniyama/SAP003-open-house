@@ -1,4 +1,4 @@
-// import templateCategory from './components/event-categories';
+import templateCategory from './components/event-categories';
 
 const filterCategory = () => {
   const db = firebase.firestore().collection('events');
@@ -13,13 +13,13 @@ const filterCategory = () => {
           id: doc.id,
           position: 0,
         };
-        // tamanho = arrayType.length + 1;
+        tamanho = arrayType.length + 1;
         arrayType.push(docEvent);
       });
-      // document.querySelector('main').innerHTML = templateCategory(
-      //   arrayType[index],
-      //   type,
-      // );
+      document.querySelector('main').innerHTML = templateCategory(
+        arrayType[index],
+        type,
+      );
     });
 };
 

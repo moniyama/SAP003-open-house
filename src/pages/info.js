@@ -2,7 +2,6 @@ function Info() {
   document.querySelector('.container-category').innerHTML = '';
   document.querySelectorAll('.arrow').forEach((arrow) => arrow.classList.add('hide'));
   
-
   const template = `
 <div>
     <article class="description">

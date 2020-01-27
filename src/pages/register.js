@@ -53,7 +53,7 @@ const registerPage = () => {
     }
   };
 
-  $('#myModal').modal('hide');
+  $('#LoginModal').modal('hide');
   document.querySelector('.container-category').textContent = '';
   main.innerHTML = template;
 
