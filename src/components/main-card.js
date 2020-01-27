@@ -27,8 +27,7 @@ const Card = (props, funcs) => {
 window.main = {
   handleClick: (event, callBack) => {
     callBack(event.currentTarget);
-  },
+  }
 };
-
 
 export default Card;

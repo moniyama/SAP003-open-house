@@ -1,6 +1,6 @@
 import Card from '../components/main-card.js';
 import templateCategory from '../components/event-categories.js';
-import RegionSelect from '../components/Region-select.js'
+import RegionSelect from '../components/Region-select.js';
 
 const hammer = new Hammer(document.querySelector('main'));
 let index = 0;
@@ -112,7 +112,7 @@ const save = (bookmark) => {
 let arrayfilter = [];
 
 const getCategory = (parameter, hash) => {
-  const category = hash.replace(/\#(.*?)\-/, '')
+  const category = hash.replace(/#(.*?)-/, '');
   document.querySelector('main').innerHTML = '';
 
   firebase.firestore().collection('events')
@@ -136,25 +136,24 @@ const getCategory = (parameter, hash) => {
 };
 
 const swipeRight = () => {
-  (index === tamanho - 1) ? index = 0 : index += 1;
+  if (index === tamanho - 1) { index = 0; } else { index += 1; }
   const card = document.querySelector('article');
   card.className = 'card card-size p-1 cards-background swiping-right';
   if (window.location.hash === '') {
-    card.addEventListener('animationend', () => { showEvents(arrayEvents) });
+    card.addEventListener('animationend', () => { showEvents(arrayEvents); });
   } else {
-    card.addEventListener('animationend', () => { showEvents(arrayfilter) });
+    card.addEventListener('animationend', () => { showEvents(arrayfilter); });
   }
 };
 
 const swipeLeft = () => {
-  (index === 0) ? index = tamanho - 1 : index -= 1;
+  if (index === 0) { index = tamanho - 1; } else { index -= 1; }
   const card = document.querySelector('article');
   card.className = 'card card-size p-1 cards-background swiping-left';
   if (window.location.hash === '') {
-    card.addE
-    ventListener('animationend', () => { showEvents(arrayEvents) });
+    card.addEventListener('animationend', () => { showEvents(arrayEvents); });
   } else {
-    card.addEventListener('animationend', () => { showEvents(arrayfilter) });
+    card.addEventListener('animationend', () => { showEvents(arrayfilter); });
   }
 };
 

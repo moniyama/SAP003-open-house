@@ -1,4 +1,4 @@
-const RegionSelect = (func) => {
+const RegionSelect = func => {
   const template = `
   <div class="input-group my-3 mx-2 select">
     <div class="input-group-prepend">
@@ -19,9 +19,11 @@ const RegionSelect = (func) => {
 
 window.select = {
   handleClick: (event, callBack) => {
-    const path = `Regiao-${event.target.options[event.target.selectedIndex].value}`
+    const path = `Regiao-${
+      event.target.options[event.target.selectedIndex].value
+    }`;
     callBack(path);
-  },
+  }
 };
 
 export default RegionSelect;

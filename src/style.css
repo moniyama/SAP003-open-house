@@ -1,21 +1,24 @@
 body {
- background-color: #EEEEEE;
+  background-color: #eeeeee;
 }
 
 .img-profile {
   border-radius: 50%;
-  border: solid 2px #4FC993;
+  border: solid 2px #4fc993;
   margin-bottom: 18px;
 }
+
 .name-user {
-  color: #3C9865;
+  color: #3c9865;
   font-size: 4vw;
   font-weight: bold;
 }
+
 .name {
   display: inline-block;
   vertical-align: top;
 }
+
 .all-content {
   margin-top: 30px;
 }
@@ -25,44 +28,44 @@ body {
   flex-direction: row;
   align-items: center;
 }
+
 .content {
   padding: 10px;
   width: 100vw;
 }
 
-html,body{
-    padding: 0;
-    margin: 0;
+html, body {
+  padding: 0;
+  margin: 0;
 }
 
 .header {
-    background-color: #3C9865;
-    width: 100vw;
-    height: max-content;
+  background-color: #3c9865;
+  width: 100vw;
+  height: max-content;
 }
 
 .entry {
-  background-color: #3C9865 !important;
-  border-color: #3C9865 !important;
+  background-color: #3c9865 !important;
+  border-color: #3c9865 !important;
 }
 
-.logo_img{
-    width: 35vw;
-    height: 20vw;
-
+.logo_img {
+  width: 35vw;
+  height: 20vw;
 }
 
 .nav {
-    height: max-content;
+  height: max-content;
 }
 
 .nav-item {
-    align-self: center;
+  align-self: center;
 }
 
 .icon {
-    font-size: 2vw;
-    margin-bottom: 2px;
+  font-size: 2vw;
+  margin-bottom: 2px;
 }
 
 .menu-topo {
@@ -70,42 +73,42 @@ html,body{
 }
 
 .form-control {
-    margin-bottom: 2%;
+  margin-bottom: 2%;
 }
 
 .font-regular-size {
-    font-size: 0.8em;
+  font-size: 0.8em;
 }
 
 .icon-small-size {
-    font-size: 1.2em;
+  font-size: 1.2em;
 }
 
 .font-small-size {
-    font-size: 0.6em;
+  font-size: 0.6em;
 }
 
 .icon-regular-size {
-    font-size: 1.5em;
+  font-size: 1.5em;
 }
 
 .img-card {
-    height: 25vh;
-    object-fit: cover;
-    object-position: 0 80%;
+  height: 25vh;
+  object-fit: cover;
+  object-position: 0 80%;
 }
 
 .card-size {
-    width: 18em;
+  width: 18em;
 }
 
 .cards-background {
-    background-color: #84fdc4 !important;
+  background-color: #84fdc4 !important;
 }
 
 .arrow {
-    font-size: 4em;
-    color: #ffbc42;
+  font-size: 4em;
+  color: #ffbc42;
 }
 
 .moreinfo-card {
@@ -115,7 +118,7 @@ html,body{
 }
 
 .green-border {
-  border-color: #4EC993 !important;
+  border-color: #4ec993 !important;
 }
 
 .selected {
@@ -138,9 +141,9 @@ html,body{
 }
 
 .button-info {
-  background-color: #3C9865;
+  background-color: #3c9865;
   border: none;
-  color:#FFBC42;
+  color: #ffbc42;
   font-weight: bold;
   font-size: 22px;
   padding: 8px 40px;
@@ -187,26 +190,26 @@ html,body{
   height: 6vh;
   border: none;
   width: 6vh;
-  color:white;
+  color: white;
 }
 
 .google-login {
-  background-color: #DB4437;
+  background-color: #db4437;
 }
 
 .google-login:hover {
   cursor: pointer;
-  background-color: #DB4437CF;
+  background-color: #db4437cf;
   transition: 400ms;
 }
 
 .facebook-login {
-  background-color: #4267B2;
+  background-color: #4267b2;
 }
 
 .facebook-login:hover {
   cursor: pointer;
-  background-color: #4267B2D9;
+  background-color: #4267b2d9;
   transition: 400ms;
 }
 
@@ -220,121 +223,125 @@ html,body{
 
 @keyframes swipeRight {
   from {
-      transform: rotate(0) translate(0)
+    transform: rotate(0) translate(0);
   }
   to {
-      transform: rotate(-9deg) translate(100vw)
+    transform: rotate(-9deg) translate(100vw);
   }
 }
 
 @keyframes swipeLeft {
   from {
-      transform: rotate(0) translate(0)
+    transform: rotate(0) translate(0);
   }
   to {
-      transform: rotate(9deg) translate(-100vw)
+    transform: rotate(9deg) translate(-100vw);
   }
 }
 
 @media (min-width: 900px) {
   .card-size {
-      width: 450px;
-      height: max-content;
+    width: 450px;
+    height: max-content;
   }
 
   .arrow {
-     font-size: 7em;
+    font-size: 7em;
   }
 
- .logo_img {
-     width: 10vw;
-     height: 5vw;
- }
+  .logo_img {
+    width: 10vw;
+    height: 5vw;
+  }
 
- .menu-topo {
-   color: white;
-   display: flex;
-   width: max-content;
- }
- 
- .menu-footer {
-     display: none;
- }
+  .menu-topo {
+    color: white;
+    display: flex;
+    width: max-content;
+  }
 
- .icon {
-     font-size: 20px;
-     margin-bottom: 2px;
- }
- 
- .nav-item {
-     text-align: center;
- }
+  .menu-footer {
+    display: none;
+  }
 
-.content-one {
-  padding-right: 80px;
-  padding-left: 60px;
-}
-.border {
- display: none;
-}
+  .icon {
+    font-size: 20px;
+    margin-bottom: 2px;
+  }
 
-.all-content {
- margin-top: 60px;
- text-align: center;
-}
-.name {
- display: block;
-}
-.border {
- border-bottom: solid 1px #A8A99F;
-}
-.img-profile {
- width: 180px;
-}
-.border-desktop {
- border-bottom: solid 1px #A8A99F;
- 
-}
+  .nav-item {
+    text-align: center;
+  }
 
-.icon {
- color: #5D5D57;
- font-size: 20px;
- cursor: pointer;
-}
-.options {
- color:#5E5E57;
- font-size: 24px;
- display: inline-block;
- cursor: pointer;
- font-weight: bold;
-}
+  .content-one {
+    padding-right: 80px;
+    padding-left: 60px;
+  }
 
-.card-desktop {
- display: flex !important;
- flex-direction: row !important;
- width: 100vw;
-} 
+  .border {
+    display: none;
+  }
 
-.img-desktop {
- width: 50%;
- height: 100%;
- margin-right: 1%;
- object-position: 70% 0;
-}
+  .all-content {
+    margin-top: 60px;
+    text-align: center;
+  }
 
-#mapContainer {
- height: 50%;
-}
+  .name {
+    display: block;
+  }
 
-.big-title {
- font-size: 1.3em;
-}
+  .border {
+    border-bottom: solid 1px #a8a99f;
+  }
 
-.height-div {
- height: 100%;
-}
+  .img-profile {
+    width: 180px;
+  }
 
-.favorite-card {
- width: 32vw;
-}
+  .border-desktop {
+    border-bottom: solid 1px #a8a99f;
+  }
+
+  .icon {
+    color: #5d5d57;
+    font-size: 20px;
+    cursor: pointer;
+  }
+  .options {
+    color: #5e5e57;
+    font-size: 24px;
+    display: inline-block;
+    cursor: pointer;
+    font-weight: bold;
+  }
+
+  .card-desktop {
+    display: flex !important;
+    flex-direction: row !important;
+    width: 100vw;
+  }
+
+  .img-desktop {
+    width: 50%;
+    height: 100%;
+    margin-right: 1%;
+    object-position: 70% 0;
+  }
+
+  #mapContainer {
+    height: 50%;
+  }
+
+  .big-title {
+    font-size: 1.3em;
+  }
+
+  .height-div {
+    height: 100%;
+  }
+
+  .favorite-card {
+    width: 32vw;
+  }
 }

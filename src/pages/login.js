@@ -19,7 +19,11 @@ const signIn = (e) => {
 
 const mediaLogin = (type) => {
   let provider;
-  type === "facebook" ? provider = new firebase.auth.FacebookAuthProvider() : provider = new firebase.auth.GoogleAuthProvider();
+  if (type === 'facebook') {
+    provider = new firebase.auth.FacebookAuthProvider();
+  } else {
+    provider = new firebase.auth.GoogleAuthProvider();
+  }
   firebase.auth().signInWithPopup(provider)
     .then((currentUser) => {
       const usersCollection = firebase.firestore().collection('users');
@@ -44,11 +48,11 @@ const mediaLogin = (type) => {
           alert('Falha na autenticação');
         });
     });
-}
+};
 
 const login = {
   signIn,
-  mediaLogin
-}
+  mediaLogin,
+};
 
 export default login;
