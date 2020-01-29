@@ -15,6 +15,9 @@ O produto final foi desenvolvido em uma semana pelo processo de Design Thinking 
 
 A aplicação exibe os eventos gratuitos de forma rápida e simples. Pode-se filtrar por região ou por tipo de evento. Para os usuários que se cadastrarem é possivel salvar os eventos que se tem interesse.
 
+![home](/img/zero0800-home.png)
+![salvos](/img/zero0800-salvos.png)
+
 ## 2. Considerações Técnicas
 
 A aplicação foi desenvolvida para ser Mobile-First.
