@@ -7,3 +7,4 @@ src/firestore-config.js
 .firebase
 firestore.rules
 firestore.indexes.json
+firebase-debug.log

@@ -4,12 +4,9 @@
     "indexes": "firestore.indexes.json"
   },
   "hosting": {
+    "site": "zero-0800",
     "public": "src",
-    "ignore": [
-      "firebase.json",
-      "**/.*",
-      "**/node_modules/**"
-    ],
+    "ignore": ["firebase.json", "**/.*", "**/node_modules/**"],
     "rewrites": [
       {
         "source": "**",
