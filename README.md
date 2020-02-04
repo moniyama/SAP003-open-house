@@ -17,7 +17,7 @@ A aplicação exibe os eventos gratuitos de forma rápida e simples. Pode-se fil
 
 Para acessar as todas as funcionalidades, pode-se utilizar o usuário de teste disponível:
 
->Perfil Teste
+> Perfil Teste
 >
 > email: usuario@teste.com
 >
